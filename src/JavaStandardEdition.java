@@ -28,12 +28,28 @@ public class JavaStandardEdition {
             System.out.println(i+1);
         }
 
-        //Arreglos
+        //Arreglo unidimensional
         int numbers[] = new int[8]; //Arreglo limitado a 8 espacios
         numbers[0] = 3333; //guardamos 3333 en la posicion =
         for(int i = 0; i<numbers.length;i++){
             numbers[i] = i*234;
         }
         System.out.println("numbers = " + numbers[5]);
+
+        //Arreglo bidimensional el primero es la fila, el segundo la columna
+        int matriz[][] = new int [3][3]; // matriz cuadrada cuando hay misma cantidad de filas que de columnas
+        for(int i =0; i<3 ;i++){
+            for(int j = 0;j<3;j++){
+                System.out.println("Ingresa el valor para la fila " +i+" Columna" + j);
+                matriz[i][j] = scanner.nextInt();
+            }
+        }
+
+        for(int i =0; i<3 ;i++){
+            for(int j = 0;j<3;j++){
+                System.out.println("Fila: "+i+" columna: "+j+" Valor: " +matriz[i][j]);
+            }
+        }
+
     }
 }
