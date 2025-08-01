@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JavaEstandardEdition {
+public class JavaStandardEdition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int year = 2004;
